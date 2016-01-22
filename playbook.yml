@@ -1,0 +1,8 @@
+---
+- name: Install Django
+  hosts: all
+  sudo: true
+  vars:
+  roles:
+    - role: ansible-django
+  tasks:

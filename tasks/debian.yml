@@ -1,0 +1,9 @@
+---
+- name: debian | installing packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - python-dev
+    - python-pip
+    - python-django

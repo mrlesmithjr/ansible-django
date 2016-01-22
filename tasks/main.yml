@@ -1,0 +1,5 @@
+---
+# tasks file for ansible-django
+
+- include: debian.yml
+  when: ansible_os_family == "Debian"
