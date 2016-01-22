@@ -7,3 +7,11 @@
     - python-dev
     - python-pip
     - python-django
+
+- name: debian | installing sqlite (if used)
+  apt:
+    name: "sqlite"
+    state: present
+  when: >
+        (django_db_type is defined and django_db_type == "sqlite") or
+        django_db_type is not defined

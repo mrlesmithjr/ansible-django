@@ -1,2 +1,3 @@
 ---
 # defaults file for ansible-django
+django_db_type: sqlite  #defines DB type to use...sqlite or mysql
