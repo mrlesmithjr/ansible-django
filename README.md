@@ -53,7 +53,7 @@ Example Playbook
   tasks:
 ````
 
-#Galaxy
+#### Galaxy
 ````
 ---
 - name: Install Django
