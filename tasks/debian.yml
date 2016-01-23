@@ -6,21 +6,6 @@
   with_items:
     - python-dev
     - python-pip
-#    - python-django
-
-- name: debian | installing django
-  pip:
-    name: "django"
-    state: present
-  when: >
-        (django_version is defined and django_version == "latest") or
-        django_version is not defined
-
-- name: debian | installing django
-  pip:
-    name: "django=={{ django_version }}"
-    state: present
-  when: django_version is defined and django_version != "latest"
 
 - name: debian | installing sqlite (if used)
   apt:
