@@ -61,8 +61,8 @@ Example Playbook
   sudo: true
   vars:
   roles:
-    - role: ansible-django
-    - role: ansible-mysql
+    - role: mrlesmithjr.django
+    - role: mrlesmithjr.mysql
       when: >
             (django_db_type is defined and django_db_type == "mysql")
   tasks:
