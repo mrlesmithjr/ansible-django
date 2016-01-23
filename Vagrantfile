@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
     django.vm.hostname = "django"
 
     django.vm.network :private_network, ip: "192.168.202.201"
-    django.vm.network "forwarded_port", guest: 80, host: 8080
+    django.vm.network "forwarded_port", guest: 8000, host: 8000
 
     django.vm.provider "virtualbox" do |vb|
       vb.memory = "1024"
